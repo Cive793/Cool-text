@@ -43,6 +43,6 @@ function createSpan() {
 function animateLetters() {
   document.querySelectorAll("span").forEach((spanLetter, i) => {
     spanLetter.classList.add("moveLetters");
-    spanLetter.style.animationDelay = `${i / 10}s`;
+    spanLetter.style.animationDelay = `${i / 30}s`;
   });
 }
