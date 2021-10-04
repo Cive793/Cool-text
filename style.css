@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@700&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: honeydew;
+}
+
+/* h1 {
+  font-size: 35px;
+  font-family: "Scheherazade New", serif;
+  color: darkslategrey;
+} */
+
+span {
+  display: inline-block;
+  font-size: 35px;
+  font-family: "Scheherazade New", serif;
+  color: darkslategrey;
+  opacity: 0;
+}
+
+/* span spacing */
+span:nth-child(5) {
+  width: 5px;
+}
+
+span:nth-child(10) {
+  width: 5px;
+}
+
+span:nth-child(17) {
+  width: 5px;
+}
+
+span:nth-child(22) {
+  width: 5px;
+}
+
+span:nth-child(25) {
+  width: 5px;
+}
+
+span:nth-child(30) {
+  width: 5px;
+}
+
+span:nth-child(34) {
+  width: 5px;
+}
+/* span spacing */
+
+section {
+  margin-top: 500px;
+}
+
+.moveLetters {
+  animation: moveLetters 1s 1 forwards;
+  animation-timing-function: cubic-bezier(0.64, 0.13, 0.57, 1.6);
+}
+
+@keyframes moveLetters {
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-200px);
+    opacity: 1;
+  }
+}
+
+/* .revealLetters {
+  animation: revealLetters 1s 1 forwards;
+}
+
+@keyframes revealLetters {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
